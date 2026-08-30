@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sujit Kumar — IT Undergrad &amp; Full-Stack Developer</title>
+<meta name="description" content="Portfolio of Sujit Kumar — B.Tech IT student, full-stack developer and DSA problem solver.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- decorative scanline / grid backdrop -->
+<div class="backdrop" aria-hidden="true"></div>
+
+<!-- ============ TAB BAR NAV ============ -->
+<header class="tabbar">
+  <div class="tabbar-inner">
+    <div class="brand">
+      <span class="brand-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="brand-name">sujit<span class="dim">.dev</span></span>
+    </div>
+
+    <nav class="tabs" id="tabs">
+      <a href="#home" class="tab active" data-tab>
+        <span class="tab-name">home</span><span class="tab-ext">.html</span>
+      </a>
+      <a href="#about" class="tab" data-tab>
+        <span class="tab-name">about</span><span class="tab-ext">.js</span>
+      </a>
+      <a href="#projects" class="tab" data-tab>
+        <span class="tab-name">projects</span><span class="tab-ext">.js</span>
+      </a>
+      <a href="#skills" class="tab" data-tab>
+        <span class="tab-name">skills</span><span class="tab-ext">.json</span>
+      </a>
+      <a href="#journey" class="tab" data-tab>
+        <span class="tab-name">journey</span><span class="tab-ext">.md</span>
+      </a>
+      <a href="#contact" class="tab" data-tab>
+        <span class="tab-name">contact</span><span class="tab-ext">.md</span>
+      </a>
+    </nav>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <nav class="mobile-tabs" id="mobileTabs">
+    <a href="#home" data-tab>home.html</a>
+    <a href="#about" data-tab>about.js</a>
+    <a href="#projects" data-tab>projects.js</a>
+    <a href="#skills" data-tab>skills.json</a>
+    <a href="#journey" data-tab>journey.md</a>
+    <a href="#contact" data-tab>contact.md</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section id="home" class="hero section">
+    <div class="hero-grid">
+
+      <div class="editor-window hero-code">
+        <div class="window-chrome">
+          <span class="chrome-dots"><i class="c-red"></i><i class="c-amber"></i><i class="c-green"></i></span>
+          <span class="chrome-title">home.html</span>
+        </div>
+        <div class="code-body">
+          <div class="gutter" id="gutter" aria-hidden="true"></div>
+          <pre class="code-content"><code id="typedCode"></code><span class="caret" id="caret">&nbsp;</span></pre>
+        </div>
+      </div>
+
+      <div class="hero-side">
+        <p class="eyebrow">// currently based in Durgapur, West Bengal</p>
+        <h1 class="hero-title">Sujit Kumar</h1>
+        <p class="hero-role">B.Tech Information Technology, HIT Durgapur — Batch of 2029</p>
+        <p class="hero-desc">
+          I build full-stack applications that ship, and solve data-structure
+          problems for the fun of the trade-offs. Currently deep in a Java-based
+          DSA grind alongside GATE preparation — treating each as a different
+          proof of the same discipline.
+        </p>
+
+        <div class="hero-actions">
+          <a href="Sujit_Kumar_CV.pdf" class="btn btn-primary" download>
+            <span>Download Résumé</span>
+          </a>
+          <a href="#projects" class="btn btn-ghost" data-tab>
+            <span>View Projects</span>
+          </a>
+        </div>
+
+        <div class="hero-links">
+          <a href="https://github.com/sujitkr268" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="https://linkedin.com/in/sujit-kumar" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="https://codeforces.com/profile/sujitkrishna2006" target="_blank" rel="noopener">Codeforces ↗</a>
+        </div>
+      </div>
+
+    </div>
+
+    <a href="#about" class="scroll-cue" data-tab aria-label="Scroll to about section">
+      <span>scroll</span>
+      <svg width="14" height="20" viewBox="0 0 14 20" fill="none"><path d="M7 1v17M1.5 12.5L7 18l5.5-5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section">
+    <div class="section-head reveal">
+      <span class="file-tag">about.js</span>
+      <h2>About</h2>
+    </div>
+
+    <div class="about-grid">
+      <figure class="portrait reveal">
+        <div class="portrait-frame">
+          <img src="photo.png" alt="Portrait of Sujit Kumar" loading="lazy">
+        </div>
+        <figcaption>
+          <span class="chrome-dots small"><i class="c-red"></i><i class="c-amber"></i><i class="c-green"></i></span>
+          profile.jpg
+        </figcaption>
+      </figure>
+
+      <div class="about-copy reveal">
+        <p class="lede">
+          Second-year IT undergraduate specialising in full-stack development
+          and data structures &amp; algorithms, with a self-directed foundation
+          in Java-based DSA and a parallel track preparing for GATE.
+        </p>
+        <p>
+          I like building things end-to-end — schema to UI — and I'm equally
+          at home debugging a DNS issue in production as I am proving why an
+          algorithm's time complexity holds. Outside of code, I write chess
+          analysis, produce animal-welfare content, and create technical
+          explainers for my college's ACM chapter.
+        </p>
+
+        <dl class="fact-grid">
+          <div class="fact"><dt>Role</dt><dd>B.Tech IT student, 2nd year</dd></div>
+          <div class="fact"><dt>Institute</dt><dd>Haldia Institute of Technology</dd></div>
+          <div class="fact"><dt>CGPA</dt><dd>9.0+ (1st Year)</dd></div>
+          <div class="fact"><dt>Focus</dt><dd>Full-Stack · DSA · GATE Prep</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" class="section">
+    <div class="section-head reveal">
+      <span class="file-tag">projects.js</span>
+      <h2>Projects</h2>
+    </div>
+
+    <div class="project-list">
+
+      <article class="project-card reveal">
+        <div class="project-top">
+          <h3>Wallet-Based Event Registration &amp; Check-In</h3>
+          <p class="project-sub">MERN stack + MetaMask identity, deployed live</p>
+        </div>
+        <p class="project-desc">
+          A full-stack event registration and check-in system where identity
+          is verified through a MetaMask wallet signature instead of a
+          password. Event and attendee data is stored off-chain in MongoDB,
+          with on-chain writes deliberately scoped as future work.
+        </p>
+        <ul class="project-notes">
+          <li>Authentication built around wallet signatures, not credentials</li>
+          <li>Debugged a supply-chain attack on a tampered local <code>dotenv</code> package</li>
+          <li>Resolved MongoDB Atlas DNS issues during deployment on Render</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag">React</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">Express</span>
+          <span class="tag">MongoDB</span>
+          <span class="tag">MetaMask</span>
+          <span class="tag">ethers.js</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/sujitkr268/Wallet-Event-Checking" target="_blank" rel="noopener">Source ↗</a>
+          <a href="https://wallet-event-checking-frontend.onrender.com" target="_blank" rel="noopener">Live Demo ↗</a>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-top">
+          <h3>VibeAthon Restro — Smart Restaurant Management</h3>
+          <p class="project-sub">Supabase backend ownership, built at VibeAthon 6.0</p>
+        </div>
+        <p class="project-desc">
+          A full-stack SaaS platform tackling restaurant operational
+          inefficiency through live table reservations, real-time queue
+          tracking, and digital menu visibility for both customers and staff.
+        </p>
+        <ul class="project-notes">
+          <li>Owned the Supabase layer end-to-end: schema design, Google Auth</li>
+          <li>Configured Row Level Security (RLS) policies for data access</li>
+          <li>Built realtime replication powering live order &amp; queue sync</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag">Supabase</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">React</span>
+          <span class="tag">Google Auth</span>
+          <span class="tag">Realtime Replication</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/sujitkr268" target="_blank" rel="noopener">Source ↗</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills" class="section">
+    <div class="section-head reveal">
+      <span class="file-tag">skills.json</span>
+      <h2>Skills</h2>
+    </div>
+
+    <div class="editor-window skills-window reveal">
+      <div class="window-chrome">
+        <span class="chrome-dots"><i class="c-red"></i><i class="c-amber"></i><i class="c-green"></i></span>
+        <span class="chrome-title">skills.json</span>
+      </div>
+      <div class="skills-body">
+        <div class="skill-group">
+          <p class="skill-key">"languages"</p>
+          <div class="tag-row"><span class="tag">Java</span><span class="tag">Python</span><span class="tag">JavaScript</span><span class="tag">C</span></div>
+        </div>
+        <div class="skill-group">
+          <p class="skill-key">"webDevelopment"</p>
+          <div class="tag-row"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">Express</span></div>
+        </div>
+        <div class="skill-group">
+          <p class="skill-key">"databases"</p>
+          <div class="tag-row"><span class="tag">MongoDB</span><span class="tag">PostgreSQL</span><span class="tag">Supabase</span></div>
+        </div>
+        <div class="skill-group">
+          <p class="skill-key">"blockchain"</p>
+          <div class="tag-row"><span class="tag">MetaMask</span><span class="tag">ethers.js</span></div>
+        </div>
+        <div class="skill-group">
+          <p class="skill-key">"tools"</p>
+          <div class="tag-row"><span class="tag">Git</span><span class="tag">GitHub</span></div>
+        </div>
+        <div class="skill-group">
+          <p class="skill-key">"currentlyBuilding"</p>
+          <div class="tag-row"><span class="tag tag-accent">Data Structures &amp; Algorithms (Java)</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ JOURNEY ============ -->
+  <section id="journey" class="section">
+    <div class="section-head reveal">
+      <span class="file-tag">journey.md</span>
+      <h2>Journey</h2>
+    </div>
+
+    <div class="timeline">
+
+      <div class="tl-item reveal">
+        <div class="tl-marker"></div>
+        <div class="tl-content">
+          <p class="tl-kicker">Education</p>
+          <h3>Haldia Institute of Technology</h3>
+          <p class="tl-meta">B.Tech in Information Technology · 2025 – Present (Expected 2029)</p>
+          <p>Maintaining a 9.0+ CGPA through consistent, self-driven study in first year.</p>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-marker"></div>
+        <div class="tl-content">
+          <p class="tl-kicker">Certification</p>
+          <h3>Python Programming — NPTEL</h3>
+          <p class="tl-meta">Score: 85%</p>
+          <p>Programming fundamentals and applied Python.</p>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-marker"></div>
+        <div class="tl-content">
+          <p class="tl-kicker">Leadership</p>
+          <h3>Content Writer, Beezuban</h3>
+          <p class="tl-meta">Animal Welfare Club</p>
+          <p>Led club initiatives and produced content including Instagram campaigns and the club's annual report.</p>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-marker"></div>
+        <div class="tl-content">
+          <p class="tl-kicker">Leadership</p>
+          <h3>Content Writer, 64 Squares — HIT Chess Club</h3>
+          <p class="tl-meta">Chess analysis &amp; tribute content</p>
+          <p>Authored pieces spanning opening theory (Benko Gambit, Caro-Kann Two Knights) and player tributes.</p>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-marker"></div>
+        <div class="tl-content">
+          <p class="tl-kicker">Leadership</p>
+          <h3>Developer, Tech Byte — ACM HIT Student Chapter</h3>
+          <p class="tl-meta">Technical carousel content</p>
+          <p>Created explainers covering HashMap internals, overfitting, JSON, and the confusion matrix / accuracy paradox.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section contact-section">
+    <div class="editor-window contact-window reveal">
+      <div class="window-chrome">
+        <span class="chrome-dots"><i class="c-red"></i><i class="c-amber"></i><i class="c-green"></i></span>
+        <span class="chrome-title">contact.md</span>
+      </div>
+      <div class="contact-body">
+        <p class="eyebrow"># Get in touch</p>
+        <h2>Open to internships, collaborations<br>and a good DSA discussion.</h2>
+
+        <div class="contact-grid">
+          <a class="contact-item" href="mailto:sujitkrishna2006@gmail.com">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">sujitkrishna2006@gmail.com</span>
+          </a>
+          <a class="contact-item" href="tel:+918436775969">
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">+91 84367 75969</span>
+          </a>
+          <a class="contact-item" href="https://github.com/sujitkr268" target="_blank" rel="noopener">
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">github.com/sujitkr268</span>
+          </a>
+          <a class="contact-item" href="https://linkedin.com/in/sujit-kumar" target="_blank" rel="noopener">
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">linkedin.com/in/sujit-kumar</span>
+          </a>
+          <a class="contact-item" href="https://codeforces.com/profile/sujitkrishna2006" target="_blank" rel="noopener">
+            <span class="contact-label">Codeforces</span>
+            <span class="contact-value">sujitkrishna2006</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>&copy; <span id="year"></span> Sujit Kumar. Built with vanilla HTML, CSS &amp; JS.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
